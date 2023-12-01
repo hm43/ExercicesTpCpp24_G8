@@ -44,6 +44,9 @@ public:
     void setStatut(string statut){
         this->statut = statut;
     }
+    double getCapacite(){
+        return capacite;
+    }
     void afficher(){
         cout<<"L'id du camion: "<<idc<<endl;
         cout<<"Le modele du camion: "<<modele<<endl;
@@ -144,6 +147,28 @@ public:
             }
         }
     }
+    void afficherParCapaciteSup(){
+        double capacite;
+        cout<<"Donner la capacite: ";
+        cin>>capacite;
+        cout<<"La liste des camions ayant une capacite superiure a: "<<capacite<<endl;
+        for(Camion &c: flotte){
+            if(c.getCapacite() > capacite){
+                c.afficher();
+            }
+        }
+    }
+    void afficherParCapaciteInf(){
+        double capacite;
+        cout<<"Donner la capacite: ";
+        cin>>capacite;
+        cout<<"La liste des camions ayant une capacite inferieur a: "<<capacite<<endl;
+        for(Camion &c: flotte){
+            if(c.getCapacite() < capacite){
+                c.afficher();
+            }
+        }
+    }
     string Statut(){
         repeter:
         cout<<"Liste des statut: "<<endl;
@@ -172,7 +197,9 @@ public:
             cout<<"2. Modifier un camion."<<endl;
             cout<<"3. Afficher le flotte."<<endl;
             cout<<"4. Afficher le flotte selon statut."<<endl;
-            cout<<"5. Quitter."<<endl;
+            cout<<"5. Afficher le flotte selon capacite superieur."<<endl;
+            cout<<"6. Afficher le flotte selon capacite inferieur."<<endl;
+            cout<<"7. Quitter."<<endl;
             cout<<">> ";
             cin>>choix;
             switch (choix) {
@@ -189,6 +216,12 @@ public:
                     afficherParStatut();
                     break;
                 case 5:
+                    afficherParCapaciteSup();
+                    break;
+                case 6:
+                    afficherParCapaciteInf();
+                    break;
+                case 7:
                     cout<<"EXIT."<<endl;
                     break;
                 
@@ -196,7 +229,7 @@ public:
                     cout<<"Mauvais choix."<<endl;
                     break;
             }
-        }while(choix != 5);
+        }while(choix != 7);
     }
 };
 
