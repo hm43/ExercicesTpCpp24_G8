@@ -4,3 +4,4 @@
 2. Serie 0.1: [Google Docs Link](https://docs.google.com/document/d/1tmkcbsYJeUEypzzx_bpJc7oufUoRC6FmQDINc7r0mp8/edit?usp=sharing)
 3. Serie 1: [Google Docs Link](https://docs.google.com/document/d/1rSqZdIQbaHn6H3pQC7as_15sZgSbhCH3y1e26pSJusQ/edit?usp=sharing)
 4. Serie 2: [Google Docs Link](https://docs.google.com/document/d/1Yk4FPbl7LDqtAhFb-48JXMaSrFVfwDMSoFrqlSKqZsM/edit?usp=sharing)
+5. Serie 3: [Google Docs Link](https://docs.google.com/document/d/1hckMTIATgCXKnlCvfeUbqpbnpLxMmXbkbg3Y5CHhmM0/edit?usp=sharing)
